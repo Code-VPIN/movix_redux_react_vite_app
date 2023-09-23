@@ -5,6 +5,7 @@ import { fetchDataFromApi } from './utils/api'
 
 import { useSelector, useDispatch } from 'react-redux'
 import { getApiConfiguration } from './store/homeSlice'
+import MainRoute from './mainRoute'
 
 function App() {
   const dispatch = useDispatch();
@@ -23,9 +24,8 @@ function App() {
       })
   }
   return (
-    <div className='App'> App
-      {url?.total_pages}
-
+    <div className='App'>
+      <MainRoute />
     </div>
   )
 }
