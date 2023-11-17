@@ -1,11 +1,15 @@
-import { useState, useEffect } from 'react'
 import './App.css'
+import { useState, useEffect } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { fetchDataFromApi } from './utils/api'
 
 import { useSelector, useDispatch } from 'react-redux'
 import { getApiConfiguration } from './store/homeSlice'
 import MainRoute from './mainRoute'
+
+
+
 
 function App() {
   const dispatch = useDispatch();
